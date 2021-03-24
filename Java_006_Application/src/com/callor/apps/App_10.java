@@ -24,7 +24,38 @@ public class App_10 {
 		System.out.println(strView);
 		
 		System.out.println(Arrays.toString(intNums));
+		System.out.println("===========================");
 		
+		/*
+		 * for(i) : 0 ~ (배열개수 - 1)
+		 * for(j) : i 값에 따라 반복횟수가 변동
+		 * 
+		 * i    j
+		 * ===============================================
+		 * 0	1
+		 * 1	2
+		 * 2	3	
+		 * 3	4
+		 * 4	5
+		 * 5	6
+		 * 
+		 * [71, 16, 14, 96, 14, 80, 33, 17, 40, 76]
+		 * 
+		 * 배열의 오름차순 정렬코드
+		 */
+		for(int i = 0 ; i < intNums.length ; i++) {
+			for(int j = i + 1; j < intNums.length ; j++) {
+				if(intNums[i] > intNums[j]) {
+					
+					int tep = intNums[i];
+					intNums[i] = intNums[j];
+					intNums[j] = temp;
+					
+				}
+				
+			}
+		}
+		System.out.println(Arrays.toString(intNums));
 		
 	}
 
