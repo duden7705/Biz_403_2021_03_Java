@@ -12,8 +12,7 @@ public class App_08 {
 		int nCount = 0;
 		System.out.printf("정수 %d는 ", intNum);
 		while(intNum > 0) {
-			nCount++;
-			intNum /= 10;
+			nCount++;			intNum /= 10;
 		}
 		System.out.printf("%d 자릿수의 숫자", nCount);
 	}
