@@ -29,7 +29,7 @@ package com.callor.apps.service;
  * 변경(확장)하여 작성할수 있다.
  * 
  * V1클래스에 a(), b(), c() method가 있다고 가정할때
- * V1클래스에 구현된 a(), 3() method는 그대로 기능을
+ * V1클래스에 구현된 a(), c() method는 그대로 기능을
  * 사용하면서
  * b() method 만 나만의 방식으로 다시 작성하여
  * 사용할수 있다
