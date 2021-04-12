@@ -1,4 +1,4 @@
-package com.duden7705.standard;
+package com.duden7705.standard.exec;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

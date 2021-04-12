@@ -37,7 +37,7 @@ public class InputServiceImplV1 implements InputService{
 				return null;
 			}
 			
-			Integer intIn = null;Integer.valueOf(strIn);
+			Integer intIn = null; Integer.valueOf(strIn);
 			try {
 			} catch (NumberFormatException e) {
 				System.out.println("정수나 QUIT만 입력가능!!");

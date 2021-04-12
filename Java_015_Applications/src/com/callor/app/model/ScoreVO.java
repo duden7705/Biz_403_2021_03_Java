@@ -87,6 +87,13 @@ public class ScoreVO extends Object {
 	// 재정의
 	// 상속받을 클래스에 있는 method를
 	// 내 맘대로 다시 만들어 쓰기
+	
+	// 재 활용
+	// toString() method는
+	// 		Object 클래스로부터 상속받은
+	// 		모든 클래스로 만든 객체에서 호출할수 있다
+	// VO 클래스에서는 VO의 변수들에 담긴 값을
+	//		확인하는 용도로 재 정의하여 활용한다
 	@Override
 	public String toString() {
 		return "ScoreVO [num=" + num + ", name=" + name + ", kor=" + kor + ", eng=" + eng + ", math=" + math + "]";
