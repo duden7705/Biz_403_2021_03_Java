@@ -9,7 +9,7 @@ public class Varrianle_20 {
 		
 		int intSum = intKor + intEng;
 		
-		System.out.printf("%d + %d = %d", intKor, intEng, intSum // intKor + intEng);
+		System.out.printf("%d + %d = %d", intKor );  // intKor + intEng);
 	}
 
 }

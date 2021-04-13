@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
 
+import com.duden7705.standard.InputService;
 import com.duden7705.standard.impl.InputServiceImplV1;
 
 public class Ex_01 {

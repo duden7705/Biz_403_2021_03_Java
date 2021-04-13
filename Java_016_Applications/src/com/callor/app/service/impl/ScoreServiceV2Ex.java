@@ -150,6 +150,15 @@ public class ScoreServiceV2Ex extends ScoreServiceImplV2Ex{
 				out = new PrintWriter(filewriter);
 				
 				int nSize1 = scoreList.size();
+				/*
+				 * 파일을 저장할때
+				 * 각 데이터를 컴마(,)로 구분하여 입력하고
+				 * 파일이름을 *.csv로 저장하면
+				 * excel에서 파일을 읽을 수 있다
+				 * 
+				 * csv  : comma-separated-variables
+				 * 컴마로 값을 구분한 파일
+				 */ 
 				for(int i = 0; i < nSize1 ; i++) {
 				ScoreVo vo = scoreList.get(i);
 				out.print(vo.getNum()+ ",");

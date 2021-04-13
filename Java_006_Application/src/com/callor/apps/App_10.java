@@ -49,6 +49,7 @@ public class App_10 {
 					
 					int tep = intNums[i];
 					intNums[i] = intNums[j];
+					int temp = 0;
 					intNums[j] = temp;
 					
 				}

@@ -25,13 +25,13 @@ public class App_07 {
 			// while(조건) 으로 실행한다
 			// if(intNum < 0) {
 			// break;
-				
+				System.out.println(intNum +"는"+ nCount + "자릿수");
 			}
 		}
 		
-		System.out.println(intNum +"는"+ nCount + "자릿수");
+	
 		
 		
 	}
 
-}
+

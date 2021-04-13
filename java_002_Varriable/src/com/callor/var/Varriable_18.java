@@ -14,7 +14,7 @@ public class Varriable_18 {
 		
 		// 첫과목의 점수를 총점변수에 대입(할당,저장)
 		intSum = intKor;
-		3
+		
 		intSum += intEng;
 		intSum += intMath;
 		

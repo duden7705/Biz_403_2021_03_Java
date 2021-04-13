@@ -1,14 +1,14 @@
 package com.callor.var;
 
-/* 
+/*  정수형 변수 num1, num2를 선언
+ * 각각 33과 55를 저장하라
+ * 
+ * 각 변수에 담김 값을 4칙연산을 수행하고
  *
  *
  */
  
- * 정수형 변수 num1, num2를 선언
- * 각각 33과 55를 저장하라
- * 
- * 각 변수에 담김 값을 4칙연산을 수행하고
+ 
 public class Varriable_01 {
 
 	public static void main(String[] args) {

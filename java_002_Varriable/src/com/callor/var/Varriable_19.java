@@ -29,5 +29,6 @@ public class Varriable_19 {
 		for( ; intNum < 10 ; ) {
 			intNum += 2;
 			System.out.println(intNum);
-
 		}
+		}
+}

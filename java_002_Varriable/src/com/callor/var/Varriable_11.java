@@ -24,7 +24,7 @@ public class Varriable_11 {
 		System.out.printf("intNum : %d, intSum : %d\n", ++intNum, intSum);
 		
 		intNum = intNum + 1;
-		intSum = intSum + INTnUM;
+		intSum = intSum + intNum;
 		System.out.printf("intNum : %d, intSum : %d", intNum, intSum);
 		}
 

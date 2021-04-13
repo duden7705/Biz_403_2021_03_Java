@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.callor.app.service.ScoreService;
-import com.duden7705.standard.impl.InputServiceImplV1;
 import com.duden7705.standard.impl.MenuServiceImplV1;
 
 public class ScoreServiceImplV2Ex implements ScoreService{
@@ -24,9 +23,13 @@ public class ScoreServiceImplV2Ex implements ScoreService{
 	@Override
 	public void selecMenu() {
 		List<String> scoreMenu = new ArrayList<String>();
-		scoreMenu.add("성적입력");
-		scoreMenu.add("성적 리스트 출력");
-		scoreMenu.add("성적 저장");
+		scoreMenu.add("학생정보 등록");
+		scoreMenu.add("성적등록");
+		scoreMenu.add("성적정보 열기");
+		scoreMenu.add("성적정보 저장");
+		scoreMenu.add("성적정보 출력");
+		
+		
 		
 		MenuService = new MenuServiceImplV1();
 		

@@ -37,8 +37,8 @@ public class App_02 {
 		for(int i = 0; i < 5 ; i++) {
 			
 			int pizzabox = intMembers[i] / 6;
-			if(intMembers[i] % (pizzaBox * 6) > 0) {
-				pizzaBox++;
+			if(intMembers[i] % (pizzabox * 6) > 0) {
+				pizzabox++;
 			}
 			System.out.printf("%d 인원수:%d, 피자주문:%d\n",(i+1), intMembers[i], pizzabox);
 		}

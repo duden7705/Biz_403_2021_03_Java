@@ -56,7 +56,7 @@ public class Controller_02 {
 		byes = true || true; // 1 + 1 = 1(있다) : true
 		byes = true || false; // 1+ 0 = 1 : trus
 		byes = false || true; // 0 + 1 = 1 : true
-		byes = false || false; 0 + 0 = 0 : false
+		byes = false || false; //0 + 0 = 0 : false
 	}
 
 }

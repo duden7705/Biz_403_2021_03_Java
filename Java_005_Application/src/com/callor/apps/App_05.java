@@ -38,12 +38,12 @@ public class App_05 {
 			int[] intTotal = new int[5];
 			float[] floatAvg = new float[5];
 			
-			for (int i = 0; i < 3; i++) {
+			for (int i1 = 0 ; i1 < 3; i1++) {
 				
-				intTotal[i] = intKors[i];
-				intTotal[i] = intEngs[i];
-				intTotal[i] = intMaths[i];
-				floatAvg[i] = (float)intTotal[i] / 3;
+				intTotal[i1] = intKors[i1];
+				intTotal[i1] = intEngs[i1];
+				intTotal[i1] = intMaths[i1];
+				floatAvg[i1] = (float)intTotal[i1] / 3;
 			}
 			
 			int intKorTotal = 0;
@@ -56,19 +56,19 @@ public class App_05 {
 			System.out.println("==================================");
 			System.out.println("학번\t국어\t영어\t수학\t총점\t평균");
 			System.out.println("----------------------------------");
-			for(int i = 0 ; i < 5 ;i++) {
-				System.out.print((i+1) + "\t");
-				System.out.print(intKors[i] + "\t");
-				System.out.print(intEngs[i] + "\t");
-				System.out.print(intMaths[i] + "\t");
+			for(int i1 = 0 ; i1 < 5 ;i1++) {
+				System.out.print((i1+1) + "\t");
+				System.out.print(intKors[i1] + "\t");
+				System.out.print(intEngs[i1] + "\t");
+				System.out.print(intMaths[i1] + "\t");
 				
-				System.out.print(intTotal[i] + "\t");
-				System.out.printf("%3.2f" ,floatAvg[i]);
+				System.out.print(intTotal[i1] + "\t");
+				System.out.printf("%3.2f" ,floatAvg[i1]);
 				
-				intKorTotal += intKors[i];
-				intEngTotal += intEngs[i];
-				intMathTotal += intMaths[i];
-				intAllTotal += intTotal[i];
+				intKorTotal += intKors[i1];
+				intEngTotal += intEngs[i1];
+				intMathTotal += intMaths[i1];
+				intAllTotal += intTotal[i1];
 				
 				System.out.printf("총점\t%d\t%d\t%d\t%d\n", intKorTotal, intEngTotal, intMathTotal);
 			

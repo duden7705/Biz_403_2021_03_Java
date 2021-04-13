@@ -26,7 +26,7 @@ public class Nums02 {
 		System.out.println(30 * 40);
 		System.out.println(30 / 40);
 		System.out.println(30 % 40);
-		System.out.println(==============);
+		System.out.println("==============");
 		// 40을 30으로 나누면 일반적 수학 연산에서는 소수점 이하 값이 나타나지만
 		// java에서 정수/ 정수는 몫을 구하기 때문에 
 		// 결과는 1만 나타난다
@@ -42,7 +42,7 @@ public class Nums02 {
 		// 모든 숫자를 실수로 변경하여 연산이 수행
 		
 		System.out.println(40 / 30.0);
-		System.out.println
+		
 		
 		// 숫자 뒤에 f(F)를 부착하면
 		// 단축형 실수가 된다.
@@ -75,4 +75,4 @@ public class Nums02 {
 
 	}
 
-}
+

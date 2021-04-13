@@ -19,6 +19,8 @@ import java.util.Random;
 
 public class App_04 {
 
+	private static int[] order;
+
 	public static void main(String[] args) {
 
 		Random rnd = new Random();
@@ -52,7 +54,7 @@ public class App_04 {
 			if (intClasses[i] % (order * pizzaPcs) > 0)
 				order++;
 		}
-		intOrders[i] = order;
+		intOrders = order;
 		System.out.println("피자 주문서");
 		System.out.println("===================");
 		System.out.println("순번\t인원\tBOX\t조각");
@@ -62,7 +64,7 @@ public class App_04 {
 			System.out.print((i + 1) + "\t");
 			System.out.println(intClasses[i] + "\t");
 			System.out.println(intOrders[i] * pizzaPcs);
-			intTotalOrder += intOrders[i];
+			int intTotalOrder = intOrders[i];
 
 		}
 

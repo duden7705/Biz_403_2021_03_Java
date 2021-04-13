@@ -83,7 +83,7 @@ public class Varriable_03 {
 		// 0으로 clear 한다.
 		// ==>변수선언과 초기화 라고 한다.
 		// ==> 변수생성 이라고 한다.
-		int num3; = 0;
+		int num3 = 0;
 		System.out.println(num3);
 		
 		int num4;
@@ -99,5 +99,4 @@ public class Varriable_03 {
 		
 
 	}
-
 }

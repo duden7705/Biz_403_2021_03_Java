@@ -8,7 +8,7 @@ public class Control_04 {
 	
 		for(int index = 0; index < 10 ; index++) {
 			// for() 반복문이 실행되는 동안에
-			// 		intNum qustnsms todtjdrhk thaufdmf qksqhrghlttnakszma
+			// 		intNum 
 			// 		실행한다
 			// 		과거에는 이러한 문제가 이슈가 되었던 적도
 			// 		있다.
@@ -46,12 +46,12 @@ public class Control_04 {
 		for(int index = 0 ; index < 10 ; index +=2) {
 			int nun = index + 1;
 			
-		
+		}
 			
 		
 		for(int index = 0; index < 10 ; index += 2) {
 			System.out.println(index);
-		
-	}
-
+		}
+		}
+	}	
 	

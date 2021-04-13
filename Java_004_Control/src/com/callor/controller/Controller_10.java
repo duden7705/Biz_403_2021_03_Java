@@ -6,7 +6,7 @@ import java.util.Random;
  * 0 ~ 100까지 중의 임의의 정수 5개를 만들어서
  * 그 수가 짝수인지 아닌지를 출력
  */
-public class Controller_10 {
+public class Controller_10  {
 	
 	public static void main(String[] args) {
 		
@@ -16,8 +16,9 @@ public class Controller_10 {
 		int num3 = rnd.nextInt(100);
 		int num4 = rnd.nextInt(100);
 		int num5 = rnd.nextInt(100);
-		
+	
 		if(num1 % 2 == 0) {
+			
 			System.out.println(num1 + " 는 짝수");
 		} else {
 			System.out.println(num2 + "는 짝수 아님");
@@ -29,7 +30,7 @@ public class Controller_10 {
 					System.out.println(num5 + " 는 짝수");
 				} else {
 					System.out.println(num1 + "는 짝수 아님");
-					
+				}
 					/*
 					 * 반복문을 사용하여 임의 정수 100를 만들고
 					 * 그 수가 짝수인지 아닌지 판별하는 코드
@@ -42,8 +43,9 @@ public class Controller_10 {
 						} else {
 							System.out.println(num + "는 짝수 아님");
 						}
-						
-						
 					}
+					
+				
+				
 
-}
+

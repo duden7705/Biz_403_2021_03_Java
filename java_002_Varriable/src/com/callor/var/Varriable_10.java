@@ -12,10 +12,12 @@ public class Varriable_10 {
 		intNum ++ ; // 시작하는 값 + 1 + 2
 		
 		int inNum1 = 100;
+		int intNum1 = 0;
 		intNum1++; // 101
 		intNum1++; // 102
 		
 		intNum1 = 99;
+		int intnUM1 = 0;
 		intnUM1 ++; // 100
 		
 		intNum1 = 0;

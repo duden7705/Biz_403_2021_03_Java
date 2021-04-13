@@ -22,6 +22,10 @@ public class MenuServiceImplV1 {
 		 * MenuServiceImplV1 클래스를 사용하여 객체를 생성할때는
 		 * title 변수와 menuList에 값을 담아서 파라메터로 전달하고
 		 * 생성자를 호출해야한다.
+		 * 
+		 * new MenuServiceImplV1() 형식으로 작성이 안된다
+		 * 반드시 String, List형 두개의 값을 전달해 주어야한다
+		 * 
 		 */
 		
 		// 객체를 생성할때 전달한 매개변수 title을
@@ -47,10 +51,5 @@ public class MenuServiceImplV1 {
 				return null;				
 	}
 		return intM = Integer.valueOf(strM);
-	}
-	if(intM < 1 || intM > nSize) {
-		System.out.println("업무는 1 ~ %d 까지 선택하세요");
-		continue;
-	}
-
+}
 }
