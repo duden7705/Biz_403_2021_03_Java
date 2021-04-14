@@ -11,16 +11,6 @@ public class AddressServiceV1 {
 	public void printAddress(String name, String email, String phone) {
 		
 	}
-	System.out.println(name);
-	System.out.println(email);
-	System.out.println(phone);
 
-// AddressVO 클래스를 매개변수로 받는 method
-public void printAddress(AddressVO adVO) {	
-	System.out.println(adVO.name);
-	System.out.println(adVO.email);
-	System.out.println(adVO.chain);
-	System.out.println(adVO.address);
-	System.out.println(adVO.cellphone);
-}
+	
 }

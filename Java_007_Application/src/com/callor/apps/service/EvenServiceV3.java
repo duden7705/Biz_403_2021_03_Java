@@ -41,7 +41,7 @@ package com.callor.apps.service;
  * 
  *  
  */
-public class EvenServiceV3 extends EvenServiceV1 {
+
 	
 
-}
+

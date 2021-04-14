@@ -27,6 +27,7 @@ public class LinesService {
 		for(int i = 0 ; i < length ; i++) {
 			sLine += "=";
 		}
+		return sLine;
 		
 		
 	}

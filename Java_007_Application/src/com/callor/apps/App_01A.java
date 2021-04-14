@@ -17,14 +17,14 @@ public class App_01A {
 			
 			int num = 0;
 			int nump = intNums[arr];
-			for(num = 2 ; num < numP; num++) {
-				if(numP % num == 0) {
+			for(num = 2 ; num < nump; num++) {
+				if(nump % num == 0) {
 					break;
 				}
 				
 			}
-			if(num < numP) {
-				System.out.println(numP + "는 소수가 아님");
+			if(num < nump) {
+				System.out.println(nump + "는 소수가 아님");
 			} else {
 				System.out.println(num + "는 소수임");
 			}

@@ -6,9 +6,7 @@ public class ScoreEx_03 {
 		
 		ScoreVO 홍길동 = new ScoreVO();
 		
-		홍길동.kor = 90 ;
-		홍길동.eng = 80;
-		홍길동.math = 99;
+		
 		
 		int total = 홍길동.getTotal();
 		System.out.println("홍길동 총점 :" + total);

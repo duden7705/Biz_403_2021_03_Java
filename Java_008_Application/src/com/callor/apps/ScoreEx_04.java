@@ -22,7 +22,7 @@ public class ScoreEx_04 {
 		//객체 이름짓기
 		// 클래스 이름의 첫글자를 소문자로 하여 그대로 사용
 		ScoreVO scoreVO = new ScoreVO();
-		ScoreServiceV5 scoreServiceV5 = new ScoreServiceV5(6);
+		
 		Scanner scanner = new Scanner(System.in);
 		
 		Random random = new Random();

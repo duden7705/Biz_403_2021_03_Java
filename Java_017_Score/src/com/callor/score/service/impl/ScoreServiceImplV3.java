@@ -50,10 +50,16 @@ public class ScoreServiceImplV3 extends ScoreServiceImplV2{
 				scoreList.add(scoreVO);
 				
 			}
+			buffer.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public void selectMenu() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

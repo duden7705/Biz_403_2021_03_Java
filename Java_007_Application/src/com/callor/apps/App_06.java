@@ -11,13 +11,13 @@ package com.callor.apps;
  * 		일부 method의 코드를 변경, 확장, 기능개선을 
  * 		하여 내 프로젝트에 적용하겠다
  */
-import com.callor.apps.service.EvenServiceV1;
+
 
 public class App_06 {
 	
 	public static void main(String[] args) {
 		
-		EvenServiceV1
+		
 	}
 
 }
