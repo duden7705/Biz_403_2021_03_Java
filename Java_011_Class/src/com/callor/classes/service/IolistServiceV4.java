@@ -4,6 +4,8 @@ import com.callor.classes.model.IolistVO;
 
 public class IolistServiceV4 extends IolistServiceV1{
 
+	private String pname;
+
 	@Override
 	public void input() {
 		// TODO Auto-generated method stub
@@ -11,35 +13,6 @@ public class IolistServiceV4 extends IolistServiceV1{
 			System.out.print("상품명(QUIT:입력중단)>>");
 			pname = scan.nextLine();
 		}
-		System.out.print("거래일자(yyyy-mm-dd) >>");
-		String date =scan.next();
-		
-		System.out.print("거래처명 >>");
-		String dname = scan.next();
-		
-		System.out.print("매입매출 구분 >>");
-		String inout = scan.next();
-		
-		System.out.print("수량 >>");
-		Integer qty = scan.nextInt();
-		
-		Integer iprice = this.inputPrice("매입");
-		if(iprice == null) {
-			return;
-		}
-		
-		Integer oprice = this.inputPrice("매출");
-		if(oprice == null) {
-			return;
-		}
-		
-		IolistVO vo = new IolistVO();
-		vo.setPname(pname);
-		vo.setDate(date);
-		vo.setDname(dname);
-		vo.setQty(qty);
-		vo.setIprice(iprice);
-		vo.setOprice(oprice);
 			
 	}
 	

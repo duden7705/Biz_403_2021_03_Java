@@ -9,20 +9,20 @@ public class Varriable_08 {
 		
 		// 1 ~ 10까지 덧셈을 수행
 		
-		System.out.println(intSum);
+		
 		
 		intSum += intNum++;
-		intSum += intNum++;
-		intSum += intNum++;
-		intSum += intNum++;
-		intSum += intNum++;
-		intSum += intNum++;
-		intSum += intNum++;
-		intSum += intNum++;
-		intSum += intNum++;
-		intSum += intNum++;
+		intSum += intNum++; 
+//		intSum += intNum++;
+//		intSum += intNum++;
+//		intSum += intNum++;
+//		intSum += intNum++;
+//		intSum += intNum++;
+//		intSum += intNum++;
+//		intSum += intNum++;
+//		intSum += intNum++;
 		System.out.println(intSum);
-		
+//		
 		
 	}
 

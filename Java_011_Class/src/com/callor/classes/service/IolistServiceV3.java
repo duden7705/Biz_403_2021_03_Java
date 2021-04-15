@@ -30,6 +30,7 @@ public class IolistServiceV3 extends IolistServiceV1{
 		}
 		
 		IolistVO vo = new IolistVO();
+		String pname = null;
 		vo.setPname(pname);
 		vo.setDate(date);
 		vo.setDname(dname);

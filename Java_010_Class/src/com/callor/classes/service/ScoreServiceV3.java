@@ -15,37 +15,10 @@ package com.callor.classes.service;
  * 업무선택 >>
  */
 
-public class ScoreServiceV3 extends ScoreServiceV2 {
+
 	
-	public void menuScore() {
-		System.out.println(Lines.dLine(50));
-		System.out.println("빛나라 고교 성적 시스템 V1");
-		System.out.println(Lines.sLine(50));
-		System.out.println("1. 한명 성적 추가");
-		System.out.println("2. 계속 성적 추가");
-		System.out.println(0. 성적리스트 출력);
-		System.out.println(Lines.sLin(50));
-		System.out.println("업무선택 >>");
-		int intMenu = scan.nextInt();
-		if(intMenu == 1) {
-			// 성적입력
-			this.inputScore();
-		}else if (intMenu == 2) {
-			while(true) {
-				if(this.inputScore() == null) {
-				break;	
-				}
-			}
-		} else if (intMenu == 2) {
-			this.printScore();
-		} else if(intMenu == 0) {
-			System.out.println("업무종료!! 야 퇴근이다");
-			return;
-	
-				
-		}
-	}
+
 	
 	
 
-}
+

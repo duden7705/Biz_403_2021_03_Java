@@ -29,27 +29,17 @@ public class Class_01 {
 		System.out.println("생성된 난수 :" + intNum);
 		
 		int nCount = 0;
-		for(int i = 2; i < intNum; i++) {
-			intNum[i] = rnd.nextInt(51) + 50;
-			if(intNum[i] % i == 0) {
-				nCount++;
+		
+			
 				
 			}
+
+	private int nCount;
 			
-			System.out.println("약수의 개수 :" + nCount);
-			int[] divisor = new int[nCount];
 			
-			for(int i = 2 ; i < intNum ; i ++) {
-				if(intNum % i == 0) {
-					divisor[i] = i;
-					divisor[index++] = i;
-				}
-			}
-			
-			System.out.println (Arrays.toString(divisor));
-		}
+	
 		
 		
 	}
 
-}
+

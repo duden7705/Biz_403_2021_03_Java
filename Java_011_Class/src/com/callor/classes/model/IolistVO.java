@@ -31,8 +31,8 @@ public class IolistVO {
 	private Integer oprice;
 	
 	
-		return pname;
-	}
+		
+	
 	public void setPname(String pname) {
 		this.pname = pname;
 	}

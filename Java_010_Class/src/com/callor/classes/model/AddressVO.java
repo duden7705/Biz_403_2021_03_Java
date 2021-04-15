@@ -24,10 +24,9 @@ public class AddressVO {
 	 * 		(null을 저장하였다)
 	 */
 	public void setAge(Integer age) {
-		if(age > 1 && age < 120) {
-		this.age = age;
-	} else {
-		this.age = null;
+		
+		
+	
 	}
 	public Integer getAge() {
 		return this.age;

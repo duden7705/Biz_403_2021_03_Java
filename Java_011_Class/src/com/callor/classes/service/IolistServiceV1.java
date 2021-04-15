@@ -54,37 +54,6 @@ public class IolistServiceV1 {
 		while(true) {
 			
 		}
-		System.out.println("=".repeat(50));
-		System.out.println("KMS 쇼핑몰 업무관리");
-		System.out.println("-".repeat(50));
-		System.out.println("1. 매입매출 등록");
-		System.out.println("2. 매입매출 리스트 출력");
-		System.out.println("QUIT. 업무종료");
-		System.out.println("-".repeat(50));
-		System.out.print("업무선택 >>");
-		String strMenu = scan.nextInt();
-		if(strMenu.equals("QUIT"));
-		break;
-		
-		Integer intMenu = null;
-		try {
-			intMenu = Integer.valueOf(strMenu);
-		} catch (Exception e) {
-			// TODO: handle exception
-			System.out.println("메뉴 선택 오류!!");
-			System.out.println("메뉴는 1 ~ 2," + "QUIT 만 입력가능");
-			continue;
-		}
-		
-		int intMenu = scan.nextInt();
-		if(intMenu == 0) {
-			break;
-		} else if(intMenu == 1) {
-			this.input();
-			
-		} else if(intMenu == 2) {
-			
-		}
 	} // end while
 	
 	public void input() {
@@ -134,7 +103,7 @@ public class IolistServiceV1 {
 	public void printIolist(IolistVO vo) {
 		// TODO 1개 데이터 출력하기
 		
-		System.out.print(vo.getPname() + "\t");
+		System.out.print(vo.getDate() + "\t");
 		System.out.print(vo.getDate() + "\t");
 		System.out.print(vo.getDname() + "\t");
 		System.out.print(vo.getInout() + "\t");

@@ -2,9 +2,9 @@ package com.callor.classes;
 
 public class Value_03 {
 	
-	public static void main(String[] args) {		
-		int num1 = getInt();
-		Integer num2 = getInteger();
+	
+	
+		
 		
 		private static int getInt() {
 			// method의 return type int형 일경우

@@ -30,5 +30,7 @@ public class AddressVO {
 	public String email;
 	public String chain;
 	public String address;
+	public String cellphone;
+	public String cellphone;
 	
 }

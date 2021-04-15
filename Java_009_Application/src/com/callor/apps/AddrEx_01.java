@@ -27,15 +27,13 @@ public class AddrEx_01 {
 		
 		// 객체의 맴버변수에 값을 저장
 		홍길동.name = "홍길동";
-		홍길동.cellphone = "010-111-1111";
+	
 		홍길동.email = "duden7705@naver.com";
 		홍길동.chain = "친구";
 		홍길동.address = "서울특별시";
 		
 		AddressServiceV1 ssV1 = new AddressServiceV1();
-		ssV1.printAddress("홍길동","duden7705","010-111-11111");
-		System.out.println("=============================");
-		ssV1.printAddress(홍길동);
+		
 		
 		
 	}

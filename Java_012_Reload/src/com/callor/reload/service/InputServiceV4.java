@@ -11,6 +11,7 @@ public class InputServiceV4 {
 	// 객체선언
 	private Scanner scan;
 	private List<NumberVO> numList;
+	private Integer intNum1;
 	
 	// 객체생성(초기화)
 	public InputServiceV4() {
@@ -34,7 +35,7 @@ public class InputServiceV4 {
 		numList.add(numberVO);
 		
 		 
-		for(int i = i ; i < numList.size(); i++) {
+		for(int i = 0 ; i < numList.size(); i++) {
 			
 			NumberVO vo = numList.get(i);
 			

@@ -2,7 +2,7 @@ package com.callor.apps;
 
 import java.util.Scanner;
 
-public class ScoreServiceV1 {
+
 	
 	// 클래스 영역에 Scanner 클래스를 사용하여
 	// scan 객체를 선언
@@ -12,56 +12,35 @@ public class ScoreServiceV1 {
 	// 클래스를 사용하여 객체를 "선언만" 아직 사용할 준비가
 	// 되어있지 않다
 	// 사용할 준비가 되어 있지 않다 == 생성, 초기화 가 안되었다
-	Scanner scan;
 	
 	// 학생 만큼 과목점수를 저장할 배열 선언
-	int[] intKor;
-	int[] intEng;
-	int[] intMath;
 	
-	public void makeScores() {
+	
+	
 		// scan 객체를 생성(초기화)하기
 		// 객체를 선언하고 생성하는 코드가 없으면
 		// 사용하는 과정에서 NullpointerException이 
 		// 발생한다
-		public ScoreServiceV1(int members) {
+	
 			// Service 클래스에서 배열의 개수를 고정하지 말고
 			// 최초로 객체를 생성할떄 필요할때 
-			scan = new Scanner(System.in);
-			
-			intKor = new int[members];
-			intEng = new int[members];
-			intMath = new int[members];
-		}
-		pubilc void makeScores() {
+		
 			// 무한 반복문을 사용하여
 			// 국어점수가 0 ~ 100 범위를 벗어나면
 			// 메시지를 보여주고 다시 점수를 입력받도록 한다
 			// 만약 정상적인 점쉬 ( 0 ~ 100 )를 입력하면
 			// 반복문을 종료하고, 다음 코드가 실행되도록 한다
-		}
-			while(true) {
-		}
-		System.out.println("국어점수를 입력하세요( 0 ~ 100");
-		System.out.print(">>");
-		int score = scan.nextInt();
-		if(score < 0 || score > 100) {
-			System.out.println("점수는 0 ~ 100까지 입력하세요");
-		} else {
-			break;
-		}
+		
+		
 		// public : 전체, 공용, 모두, 누구나
 		// 객체.addNum() 형식으로 method를 호출하여
 		// 명령을 실행할수 있도록 하는 Keyword
-		public void addNum() {
-			this.inputScore();
+		
 			
 			// 현재 method코드의 끝이다 라는 선언
 			// method 선언 키워드가 void이면
 			// return 명령을 생략할수 있다.
-			return;
-		}
-	}
+	
 	
 	// private: 개인적인, 현재 클래스에서만 
 	// method를 호출하여
@@ -87,29 +66,4 @@ public class ScoreServiceV1 {
 	//  return 명령문은 반드시 코드내에 적절한 위치에
 	// 있어야 하고 
 	//return 값 형식으로 사용해야 한다.
-	private Integer inputScore() {
-		return 0;		
-	}
 	
-	public String names() {
-		return "홍길동";		
-	}
-	public int add() {
-		return 0;
-		
-	}
-	public float addFlat() {
-		return 0.0f;
-		
-	}
-	public long addLong() {
-		return 0;
-	}
-	public boolean yesNo() {
-		return false;
-	}
-	public boolean noYes() {
-		return true;
-	}
-
-}

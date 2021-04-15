@@ -10,6 +10,10 @@ public class ScoreServicV2 {
 		
 	}
 	
+	public ScoreServicV2(int i) {
+		// TODO Auto-generated constructor stub
+	}
+
 	/*
 	 * this(현재객체, 현재클래스)
 	 * 같은 클래스내에 있는 코드
@@ -37,7 +41,7 @@ public class ScoreServicV2 {
 		System.out.printf("국어점수 : %d\n",intMath);
 		System.out.println("=========================");
 	}
-	private Integer inputScore() {			
+	Integer inputScore() {			
 	Integer score = 0;
 		while(true) {
 		System.out.println("점수를 입력하세요(0~100)");

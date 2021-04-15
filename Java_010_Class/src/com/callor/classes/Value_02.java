@@ -27,6 +27,8 @@ import java.util.Scanner;
 
 public class Value_02 {
 	
+	private static String str1;
+
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.print(" >>");

@@ -74,15 +74,9 @@ public class IolistEx_01 {
 		printIolist(iolistVO);
 	} // main()
 	{
-		public void printAllList() {
-			System.out.println("=".repeat(50));
+		
 			
-			
-			for(int i = 0 ; i < iolist.size() ; i++) {
-				IolistVO vo = iolist.get(i);
-				
-			}
-		}
+		
 	}
 	
 	
@@ -92,7 +86,7 @@ public class IolistEx_01 {
 		System.out.println("========================================");
 		System.out.println("상품명\t일자\t거래처\t구분\t수량단가\t");
 		System.out.println("----------------------------------------");
-		System.out.print(iolistVO.getPname() + "\t");
+		System.out.print(iolistVO.getDate() + "\t");
 		System.out.print(iolistVO.getDate() + "\t");
 		System.out.print(iolistVO.getDname() + "\t");
 		System.out.print(iolistVO.getInout() + "\t");

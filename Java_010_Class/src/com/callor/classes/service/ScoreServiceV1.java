@@ -1,10 +1,7 @@
 package com.callor.classes.service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
-import com.callor.classes.model.ScoreVO;
+
 
 /*
  * ScoreServiceV1을 extends(상속, 확장)
@@ -16,7 +13,7 @@ import com.callor.classes.model.ScoreVO;
  */
 
 
-public class ScoreServiceV2 extends ScoreServiceV1 {
+
 	
 	/*
 	 * V1에서 protected로 만든 변수는 V2에서 바로사용가능
@@ -55,7 +52,7 @@ public class ScoreServiceV2 extends ScoreServiceV1 {
 	 *  		부모클래스와 상속받은 자식클래스 간에 공유하는 목적
 	 */
 	
-	public ScoreServiceV1() {
+	
 		
 		
 		/*
@@ -66,70 +63,24 @@ public class ScoreServiceV2 extends ScoreServiceV1 {
 		 * 상속을 허락하고, 맴버변수를 공유하고자 할떄는
 		 * protected를 추가한다.
 		 */
-		protected Scanner scan;
-		List<ScoreVO> scoreList;
 		
 		
-			scan = new Scanner(System.in);
-			scoreList = new ArrayList<ScoreVO>();
+		
+		
 			
-			public Integer inputScore(String strNum, String strSub) {
-				int intKorScore = 0;
-				while(true) {
-					
-				System.out.println(strNum
-						+ "국어점수를 입력하세요(중단:-1)");
-				System.out.print(">>");
-				intKorScore = scan.nextInt();
-				if(intKorScore == -1) {
-					return null;
-				} else if (intKorScore < 0 || intKorScore > 100) {
-					System.out.println("국어점수는 0 ~100까지!!");
-					continue;
-				}
-				break;
-				
-			
-		}
-				return intScore;
-				
-				
-				
-				
-		public Integer inputScore() {
-			
-			String[] strSubject = {"국어","영어","수학"};
-			Integer[] intScores = new Integer[strSubject.length];
-		}
 						
 			
 			/*
 			 * scoreList의 데이터 개수를 계산하여
 			 * 입력할 학번을 자동으로 생성하기
 			 */
-			int nSize = scoreList.size();
-			String strNum = String.format("%03d", nSize + 1);			
-			
-			for(int i = 0 ; i < strSubject.length; i++) ;
-			intScores[i]					
-			= this.inputScore(strNum, strSubject[i]);
-			if(intScores[i] == null) {
-				return null;
-			}
-			
-			
-			ScoreVO scoreVO = new ScoreVO();
-			scoreVO.num = strNum;
-			scoreVO.Kor = intScores[0];
-			scoreVO.Eng = intScores[1];
-			scoreVO.Math = intScores[2];			
-			scoreList.add(scoreVO);
+		
+					
 			
 			
 			
-		} 
-										
-		}
+		
+			
 		
 	
 

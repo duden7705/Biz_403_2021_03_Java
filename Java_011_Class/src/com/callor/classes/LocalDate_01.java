@@ -30,8 +30,7 @@ public class LocalDate_01 {
 		
 		System.out.println(local.plusMonths(1));
 		
-		local.with(TemporalAdjuster.firstDayOfYear());
-		local.with(TemporalAdjuster.firstDayOfMonth());
+		
 	}
 
 }

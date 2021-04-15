@@ -54,7 +54,7 @@ public class PrimeServiceV6 {
  		for(int i = 0 ; i < nSize ; i++) {
  			
  			System.out.print(primList.get(i) + "\t");
- 			if( i + 1) % 5 == 0) {
+ 			if( i + 1 % 5 == 0) {
  				System.out.println();				
  			} 			
  		}
