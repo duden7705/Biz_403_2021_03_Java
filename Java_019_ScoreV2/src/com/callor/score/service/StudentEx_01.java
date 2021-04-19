@@ -10,8 +10,10 @@ public class StudentEx_01 {
 		// 사용하여 객체 생성 진행
 		StudentService stService = new StudentServiceImplV1A();
 		
+		
 		//.../st.txt 파일을 사용하여 객체 생성 진행
-		StudentService stService2 = new StudentServiceImplV1A("src/com/callor/score/st.txt");
+		StudentService stService2 = new StudentServiceImplV1A("src/com/callor/score/st.txt");		
+		stService.printStudent();
 	}
 
 }

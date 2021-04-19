@@ -6,8 +6,8 @@ public class ScoreVO {
 	Integer kor;
 	Integer eng;
 	Integer math;
-	Integer total;
-	Float avg;
+	// Integer total;
+	// Float avg;
 	
 	public String getNum() {
 		return num;
@@ -34,16 +34,19 @@ public class ScoreVO {
 		this.math = math;
 	}
 	public Integer getTotal() {
+		Integer total = this.kor + this.eng + this.math;
 		return total;
 	}
-	public void setTotal(Integer total) {
-		this.total = total;
-	}
+	
 	public Float getAvg() {
+		Float avg = (float)this.getTotal()/3;
 		return avg;
 	}
-	public void setAvg(Float avg) {
-		this.avg = avg;
+	
+	@Override
+	public String toString() {
+		return "ScoreVO [학번=" + num + ", 국어=" + kor + ", 영어=" + eng + ", 수학=" + math + ", 총점=" + this.getTotal()
+				+ ", 평균=" + this.getAvg() + "]";
 	}
 }
 	

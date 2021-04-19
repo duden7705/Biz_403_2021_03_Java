@@ -11,7 +11,7 @@ import com.callor.score.service.StudentService;
 
 public class StudentServiceImplV1A implements StudentService{
 
-	protected List<StudentVO> studentList;
+	protected List<ScoreVO> studentList;
 	protected String studentFile;
 	
 	protected final int 학번 = 0 ;
@@ -41,7 +41,7 @@ public class StudentServiceImplV1A implements StudentService{
 	
 	public StudentServiceImplV1A(String fileName) {
 		this.studentFile = fileName;
-		studentList = new ArrayList<StudentVO>();
+		studentList = new ArrayList<ScoreVO>();
 		// 클래스를 객체로 생성할때 method를 호출하여
 		// 데이터를 사용하도록 준비해 달라
 		this.loadStudent();
@@ -55,24 +55,27 @@ public class StudentServiceImplV1A implements StudentService{
 
 	@Override
 	public void loadStudent() {
-		
-		FileReader fileReader = null;
+		// 순서 : 1. 선언
+				 //2. 생성
+				//3. 
+				 
+		FileReader fileReader = null; // 선언
 		BufferedReader buffer = null;
 		
 		try {
-			fileReader = new FileReader(this.studentFile);
+			fileReader = new FileReader(this.studentFile); // 생성
 			buffer = new BufferedReader(fileReader);
 			
 			while(true) {
 				
 				try {
-					String reader= buffer.readLine();
+					String reader= buffer.readLine(); // 한줄씩 읽어들이기
 					if(reader == null) break;
 					
-					String[] sts = reader.split(":");
-					StudentVO studentVO = new StudentVO();
+					String[] sts = reader.split(":"); // 쪼개서 사용하겠다 기준을 찾아라
+					ScoreVO studentVO = new ScoreVO();
 					studentVO.setNum(sts[학번]);
-					studentVO.setName(sts[학번]);
+					studentVO.setName(sts[이름]);
 					studentVO.setGrade(sts[반]);
 					studentVO.setDept(sts[학과]);
 					studentVO.setAddress(sts[주소]);
@@ -93,9 +96,28 @@ public class StudentServiceImplV1A implements StudentService{
 	}
 
 	@Override
-	public StudentVO getStudent(String num) {
-		// TODO Auto-generated method stub
-		return null;
+	public ScoreVO getStudent(String num) {
+		// 학번으로 학생조회하여 학생정보 return
+		
+		// 1.번 코드
+		int nSize = studentList.size();
+		for(int i = 0 ; i < nSize ; i++) {
+			
+			// StudentVO vo = null
+			// vo = studentList.get(i);
+			ScoreVO vo = studentList.get(i);
+			if(vo.getNum().equals(num)) {
+				return vo;
+			}
+		}
+		// 2.번 코드
+		// 새로운 for, forEach
+		for(ScoreVO vo : studentList) {
+			if(vo.getNum().equals(num)) return vo;
+			
+				
+		}
+		return null;		
 	}
 
 	@Override
@@ -126,7 +148,7 @@ public class StudentServiceImplV1A implements StudentService{
 		 */
 		int nSize = studentList.size();
 		for(int i = 0 ; i < nSize ; i ++);
-		StudentVO vo = studentList.get(i);
+		ScoreVO vo = studentList.get(i);
 		
 		System.out.print(vo.getNum()+ "\t");
 		System.out.print(vo.getName()+ "\t");

@@ -1,5 +1,9 @@
 package com.callor.score.service;
 
-public class ScoreService {
+public interface ScoreService {
+	
+	public void insertScore();
+	public void loadScore();
+	public void printSore();
 
 }
