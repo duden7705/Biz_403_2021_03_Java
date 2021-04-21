@@ -25,6 +25,31 @@ public class BlackJackGame {
 			temp = deck[0];
 			deck[0] = deck[rNumber];
 			deck[rNumber] = temp;
+			
+			int deckIndex = 0;
+			int userADeck[] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 }; // 카드 받을 횟수 10번으로 잡고 배열선언
+			int userBDeck[] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 }; 
+			int userAIndex = 0;
+			int userBIndex = 0;
+			boolean userAFlag = true;
+			boolean userBFlag = true;
+			int ScoreASum = 0;
+			int ScoreBSum = 0;
+			
+			for(int j = 0; j < 10 ; i++) { // 분배할 카드의 횟수 10으로 지정
+				if(userAFlag) {
+					System.out.println("userA님, 계속 카드를 받으시겠습니까? 0-No/1-Yes");
+					if( scr.nextLine().equals("0")) {
+						userAFlag = false;						
+					}
+				}	
+				if(userBFlag) {
+					System.out.println("userB님, 계속 카드를 받으시겠습니까? 0-No/1-Yes");
+					if( scr.nextLine().equals("0")) {
+						userBFlag = false;
+					}
+				}
+			}
 		}
 	}
 }
