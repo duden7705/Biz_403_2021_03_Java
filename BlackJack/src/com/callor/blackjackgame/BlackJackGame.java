@@ -127,6 +127,7 @@ public class BlackJackGame {
 				System.out.println("***total userB 점수:" + ScoreBSum);
 				System.out.println(" ");
 			}	
+			// 승패결정 하기
 			String playState = "계속 진행하세요 ";
 			if(ScoreASum > 21) {
 				playState = "B user 승리";
