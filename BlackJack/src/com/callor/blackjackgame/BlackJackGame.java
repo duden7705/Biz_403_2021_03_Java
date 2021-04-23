@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class BlackJackGame {
 	
-	private static String[] cardShape;
-
 	public static void main(String[] args) {
 		
 		Scanner scr = new Scanner(System.in);
@@ -26,8 +24,7 @@ public class BlackJackGame {
 			int temp;
 			temp = deck[0];
 			deck[0] = deck[rNumber];
-			deck[rNumber] = temp;
-			
+			deck[rNumber] = temp;			
 			// 카드를 한장씩 뽑아서 플레이어에게 나눠주는 작업 (중복되면 안되므로 나눠준 카드와 나눠줄 카드를 구분해야 한다)
 	        // -1이란 값은 -1이라는 숫자를 랜덤하게 나눠받은 카드에 대입하고자 사용함
 			int deckIndex = 0;
@@ -38,8 +35,7 @@ public class BlackJackGame {
 			boolean userAFlag = true;
 			boolean userBFlag = true;
 			int ScoreASum = 0;
-			int ScoreBSum = 0;
-			
+			int ScoreBSum = 0;			
 			for(int j = 0; j < 10 ; i++) { // 분배할 카드의 횟수 10으로 지정
 				if(userAFlag) {
 					System.out.println("userA님, 계속 카드를 받으시겠습니까? 0-No/1-Yes");
@@ -104,8 +100,7 @@ public class BlackJackGame {
 					break;
 				}
 				for(int i1 = 0; i < userAIndex; i++) {
-					if(userADeck[i] % 13 == 0) {
-						
+					if(userADeck[i] % 13 == 0) {						
 						if((ScoreASum + 10) <=21 ) {
 							ScoreASum = ScoreASum + 10;
 						}
@@ -116,20 +111,39 @@ public class BlackJackGame {
 				for (int i1 : userADeck) {
 					if(i != -1) {
 						 // System.out.println(i + " "); A유저가 뽑은 카드 덱 번호 (출력되지 않아도 무관하므로 주석처리)	
-					System.out.println("카드모양:" + cardShape[i / CardNumber.length]);
+						  System.out.println("카드 모양: " + CardNumber[i / CardNumber.length]);
 					System.out.println("카드숫자:" + CardNumber[i % CardNumber.length]);
-					System.out.println("----------------------------------------------");
-					
+					System.out.println("-".repeat(50));					
 					}
 				}
 				System.out.println(" ");
 				System.out.println("[B user] Card");
 				for(int i1 = 0; i < userBIndex; i++) {
 					 // System.out.println(userBDeck[i] + " "); B유저가 뽑은 카드 덱 번호 (출력되지 않아도 무관하므로 주석처리)
-					System.out.println("카드 모양: " + cardShape[userBDeck[i] / CardNumber.length]);
+					System.out.println("카드 모양: " + CardNumber[userBDeck[i] / CardNumber.length]);
 					System.out.println("카드 숫자: " + CardNumber[userBDeck[i] % CardNumber.length]);
+					System.out.println("-".repeat(50));
 				}
-			}			 			
+				System.out.println("***total userB 점수:" + ScoreBSum);
+				System.out.println(" ");
+			}	
+			String playState = "계속 진행하세요 ";
+			if(ScoreASum > 21) {
+				playState = "B user 승리";
+			} else {
+				if(ScoreBSum > 21) {
+					playState = "A user 승리";
+				} else {
+					if(ScoreASum > ScoreBSum) {
+						playState = "A user 승리";
+					} else if (ScoreASum == ScoreBSum) {
+						playState = "무승부";
+					} else {
+						playState = "B user 승리";
+					}
+				}
+			}
+			System.out.println(playState);
 		}
 	}
 }
